@@ -11,12 +11,9 @@ interface CanvasProps {
 }
 
 export const Canvas = ({ boardId }: CanvasProps) => {
-  const info = useSelf((me) => me.info);
-  console.log("INFO: ", { info });
-
   return (
     <main className="relative h-full w-full touch-none bg-neutral-100">
-      <Info />
+      <Info boardId={boardId} />
       <Participants />
       <Toolbar />
     </main>
