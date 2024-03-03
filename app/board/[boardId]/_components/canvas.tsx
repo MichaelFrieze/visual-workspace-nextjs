@@ -411,7 +411,6 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         case "z": {
           if (e.ctrlKey || e.metaKey) {
             if (e.shiftKey) {
-              console.log("I am here");
               history.redo();
             } else {
               history.undo();
